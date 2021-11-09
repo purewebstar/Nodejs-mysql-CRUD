@@ -1,0 +1,5 @@
+CREATE TABLE blogs(
+  blog_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
+  blog_title VARCHAR(50) NOT NULL,
+  blog_description TEXT NOT NULL
+);

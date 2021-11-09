@@ -30,6 +30,15 @@ nodemon app.js
 ```
 ## Rest Client Api testing (POSTMAN)
 
+## Environment Variables
+```
+PORT=?
+DATABASE_HOST=?
+DATABASE_USERNAME=?
+DATABASE_PASSWORD=?
+DATABASE_NAME=?
+```
+
 ### Reading API ENDPOINTS
 ```rest
 ###
@@ -69,7 +78,7 @@ Content-Type: application/json
 
 {
      "blog_title": "CRUD Operations",
-     "blog_description": "Designing Api's using NodeJs, ExpressJs and MysqlMongoDb"
+     "blog_description": "Designing Api's using NodeJs, ExpressJs and MysqlDb"
 }
 
 ###

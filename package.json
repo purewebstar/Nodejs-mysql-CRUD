@@ -1,0 +1,36 @@
+{
+  "name": "nodejs-mysql-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abriilo/Nodejs-mysql-CRUD.git"
+  },
+  "keywords": [
+    "MYSQL",
+    "NODEJS",
+    "EXPRESSJS",
+    "API"
+  ],
+  "author": "Abraham Mitiku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abriilo/Nodejs-mysql-CRUD/issues"
+  },
+  "homepage": "https://github.com/abriilo/Nodejs-mysql-CRUD#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}
