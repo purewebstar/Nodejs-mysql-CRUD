@@ -58,14 +58,14 @@ const updateBlog = async (req, res)=>{
     pool.getConnection((err, connection)=>{
         if(err) console.log(err.message);
         else{
-         let blog_id = req.params.id;
-         let {blog_title, blog_description} = req.body;
-         let query = 'UPDATE blogs WHERE blog_id=? SET blog_title=? ,blog_description=?';
-         connection.query(query, [blog_id, blog_title, blog_description], (err, rows)=>{
+         const blog_id = req.params.id;
+         const {blog_title, blog_description} = req.body;
+         const query = 'UPDATE blogs SET blog_title=?, blog_description=? WHERE blog_id=?';
+         connection.query(query, [blog_title, blog_description, blog_id], (err, rows)=>{
             connection.release();
              if(err) return res.status(404).json({message: err.message});
              else{
-                 return res.status(201).json({blogs: rows})
+                 return res.status(201).json({message: 'blog updated!'})
              }
          })
         }
